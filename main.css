@@ -72,19 +72,26 @@ body{
     margin: auto;
     background: var(--theme-color1);
     border: none;
-    padding: 10px 48px;
-    border-radius: 5px;
+    border-radius: 3px;
+    padding: 5px 10px;
     box-shadow: 1px 1px 2px black;
+    position: absolute;
+    top: 0%;
+    right: -3%;
+    cursor:pointer;
 }
 .prev-button{
     color: white;
     margin: auto;
-    background: var(--theme-color2);
+    background:var(--theme-color2);
     border: none;
-    padding: 10px 48px;
+    padding: 5px 10px;
     border-radius: 5px;
     box-shadow: 1px 1px 2px black;
-
+    position: absolute;
+    top: 0%;
+    left: -3%;
+    cursor: pointer;
 }
 .refresh-button { 
     color: white;
@@ -93,7 +100,9 @@ body{
     border: none;
     padding: 10px 48px;
     border-radius: 5px;
-    box-shadow: 1px 1px 2px black;}
+    box-shadow: 1px 1px 2px black;
+}
+
 .lesson{
     display: none;
 }
@@ -105,6 +114,7 @@ body{
     grid-gap: 1px; */
     width: 90%;
     margin: 20px auto;
+    position: relative;
     }
  section{
     padding: 20px;
