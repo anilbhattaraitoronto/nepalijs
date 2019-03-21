@@ -77,13 +77,14 @@ body{
     cursor:pointer;
     border: 1px solid gray;
     font-size: .9rem;
+    background: none;
 }
 .next-button{
-    background: var(--theme-color1);
+    /* background: var(--theme-color1); */
     right: 20px;
 }
 .prev-button{
-    background:var(--theme-color2);
+    /* background:var(--theme-color2); */
     left: 20px;
 }
 .next-button:hover, .prev-button:hover{
