@@ -7,12 +7,11 @@ var lessons = document.querySelectorAll('.lesson');
 
 var mainIndex = 1;
 var mainSections = document.querySelectorAll('.main-section')
+
 var lessonTab = document.querySelector('.lesson-tab')
 var readTab = document.querySelector('.read-tab')
 var writeTab = document.querySelector('.write-tab')
 var listenTab = document.querySelector('.listen-tab')
-
-// var lessonTab = document.querySelector('.lesson-tab');
 
 //This can be used for slideshows for other sites
 // setInitialMain();
@@ -28,8 +27,6 @@ function setInitialLesson() {
     }
     lessons[index - 1].style.display = 'block';
 }
-
-
 function hideLessons() {
     lessons.forEach((lesson) => {
         lesson.style.display = 'none'
@@ -39,9 +36,7 @@ function nextLesson() {
     hideLessons()
     index++;
     setInitialLesson()
-
 }
-
 function prevLesson() {
     hideLessons()
     index--;
@@ -53,19 +48,6 @@ function lessonRefresh() {
     lessons[index - 1].style.display = 'block';
 }
 
-
-prevButton.addEventListener('click', prevLesson)
-nextButton.addEventListener('click', nextLesson)
-// lessonTab.addEventListener('click', refresh);
-
-
-//Main Sections Code
-
-// showInitialSection();
-
-// function showInitialSection() {
-
-// }
 function showSection(n) {
     // showInitialSection()
     if (n > mainSections.length) {
@@ -80,6 +62,10 @@ function showSection(n) {
     mainSections[n - mainIndex].style.display = 'block'
 
 }
+
+prevButton.addEventListener('click', prevLesson)
+nextButton.addEventListener('click', nextLesson)
+
 lessonTab.addEventListener('click', () => {
     showSection(1)
     lessonRefresh();
