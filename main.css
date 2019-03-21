@@ -51,16 +51,16 @@ body{
     color: var(--theme-color2);
     }
 .main-header{
-    padding: 50px 0;
+    padding: 10px 0;
     border-bottom: 2px solid var(--theme-color1);
-    margin: 5px auto;
+    margin: auto;
     }
 .masthead{
     color: var(--theme-color1);
     text-align: center;
     text-transform: uppercase;
-    word-spacing: 450%;
-    font-size: 200%;
+    word-spacing: 150%;
+    font-size: 160%;
     }
 .lesson-buttons{
     width: 100%;
@@ -105,7 +105,7 @@ body{
     display: none;
 }
 
-.lessons{
+.lessons, .read, .write, .listen{
     /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: auto;
@@ -113,6 +113,7 @@ body{
     width: 90%;
     margin: 20px auto;
     position: relative;
+    display: none;
     }
  section{
     padding: 20px;
@@ -133,6 +134,9 @@ section:nth-child(odd){
     padding: 10px 0;
     margin: 20px auto;
     }
+.section-title > .topic{
+    color: var(--theme-color1);
+}
 .section-sub-title{
     text-align: center;
     padding: 10px 0;
