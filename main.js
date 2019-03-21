@@ -1,4 +1,5 @@
 
+
 var index = 1;
 var nextButton = document.querySelector('.next-button');
 var prevButton = document.querySelector('.prev-button')
@@ -9,15 +10,14 @@ var refreshButton = document.querySelector('.refresh-button');
 setInitial();
 function setInitial() {
 
-    index++;
     if (index > lessons.length) {
         index = 1
     }
     if (index < 1) {
         index = lessons.length
     }
-    lessons[index - 1].style.display = 'block';
 
+    lessons[index - 1].style.display = 'block';
 }
 
 function hideLessons() {
@@ -27,7 +27,9 @@ function hideLessons() {
 }
 function addLesson() {
     hideLessons()
+    index++;
     setInitial()
+
     console.log(index)
 }
 
@@ -39,12 +41,15 @@ function showLessons() {
 }
 
 prevButton.addEventListener('click', () => {
-    index--;
-    if (index < 1) {
-        index = lessons.length
-    }
+
+    // if (index < 1) {
+    //     index = lessons.length
+    // }
     hideLessons()
-    lessons[index - 1].style.display = 'block';
+    index--;
+    setInitial()
+
+    // lessons[index - 1].style.display = 'block';
 
 })
 nextButton.addEventListener('click', addLesson)
