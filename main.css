@@ -3,8 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    --theme-color1: rgb(143, 26, 26);
-    --theme-color2: rgb(26, 28, 143);
+    --theme-color1: rgb(133, 13, 4);
+    --theme-color2: rgb(11, 31, 100);
     font-family: Arial;
     font-size: 103%;
     }
@@ -72,26 +72,32 @@ body{
     margin: auto;
     background: var(--theme-color1);
     border: none;
-    border-radius: 3px;
-    padding: 5px 10px;
-    box-shadow: 1px 1px 2px black;
+    /* border-radius: 3px; */
+    padding: 8px;
+    /* box-shadow: 1px 1px 2px black; */
     position: absolute;
     top: 0%;
-    right: -3%;
+    right: 0%;
     cursor:pointer;
+    border: 1px solid gray;
 }
 .prev-button{
     color: white;
     margin: auto;
     background:var(--theme-color2);
     border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    box-shadow: 1px 1px 2px black;
+    padding: 8px;
+    /* border-radius: 5px; */
+    /* box-shadow: 1px 1px 2px black; */
     position: absolute;
     top: 0%;
-    left: -3%;
+    left: 0%;
     cursor: pointer;
+    border: 1px solid gray;
+}
+.next-button:hover, .prev-button:hover{
+    background: white;
+    color: var(--theme-color2);
 }
 .refresh-button { 
     color: white;
