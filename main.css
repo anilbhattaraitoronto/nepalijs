@@ -63,37 +63,28 @@ body{
     font-size: 200%;
     }
 .lesson-buttons{
-        width: 100%;
-        margin: auto;
-        text-align: center;
-    }
-.next-button{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.next-button, .prev-button{
     color: white;
     margin: auto;
-    background: var(--theme-color1);
     border: none;
-    /* border-radius: 3px; */
-    padding: 8px;
-    /* box-shadow: 1px 1px 2px black; */
+    padding: 4px;
     position: absolute;
     top: 0%;
-    right: 0%;
     cursor:pointer;
     border: 1px solid gray;
+    font-size: .9rem;
+}
+.next-button{
+    background: var(--theme-color1);
+    right: 20px;
 }
 .prev-button{
-    color: white;
-    margin: auto;
     background:var(--theme-color2);
-    border: none;
-    padding: 8px;
-    /* border-radius: 5px; */
-    /* box-shadow: 1px 1px 2px black; */
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    cursor: pointer;
-    border: 1px solid gray;
+    left: 20px;
 }
 .next-button:hover, .prev-button:hover{
     background: white;

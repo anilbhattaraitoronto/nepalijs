@@ -16,7 +16,6 @@ function setInitial() {
     if (index < 1) {
         index = lessons.length
     }
-
     lessons[index - 1].style.display = 'block';
 }
 
@@ -29,8 +28,6 @@ function addLesson() {
     hideLessons()
     index++;
     setInitial()
-
-    console.log(index)
 }
 
 function showLessons() {
@@ -41,16 +38,9 @@ function showLessons() {
 }
 
 prevButton.addEventListener('click', () => {
-
-    // if (index < 1) {
-    //     index = lessons.length
-    // }
     hideLessons()
     index--;
     setInitial()
-
-    // lessons[index - 1].style.display = 'block';
-
 })
 nextButton.addEventListener('click', addLesson)
 refreshButton.addEventListener('click', showLessons)
