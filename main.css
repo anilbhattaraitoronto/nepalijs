@@ -148,12 +148,15 @@ section:nth-child(odd){
     text-align: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
     grid-gap: 1px;
 
 }
 .vowels span{
-    displa: block;
+    display: block;
     padding: 16px;
+    width: 100%;
+    transition: transform 1s;
 }
 .vowels span:nth-child(odd){
     background: var(--theme-color1)
@@ -162,6 +165,12 @@ section:nth-child(odd){
     background: white;
     color: var(--theme-color1);
 }
+
+.vowels span:hover{
+    cursor: pointer;
+    transform: scale(1.5, 3);
+    box-shadow: 8px 8px 18px black;
+} 
 ul{
     padding: 20px;
     list-style-type:none;
