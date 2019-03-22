@@ -195,3 +195,31 @@ footer{
     color: white;
     }
 
+    .vowel{
+        position: relative;
+        padding: 20px;
+        background: lightblue;
+    }
+    .vowel .nepali{
+        font-size: calc(4vw + 1rem);
+        margin: 16px 0;
+    }
+    .vowel .english{
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        font-size: calc(1vw + .7rem);
+    }
+    .letter-sound{
+        position: absolute;
+        bottom: 0;
+        right: 2px;
+        font-size: .8rem;
+    }
+    audio{
+        display: block;
+        width: 80px;
+        height: 80px;
+        opacity: .3;
+    }
+
