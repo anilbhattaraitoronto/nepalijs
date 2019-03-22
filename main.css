@@ -203,12 +203,15 @@ footer{
     .vowel .nepali{
         font-size: calc(4vw + 1rem);
         margin: 16px 0;
+        color: var(--theme-color2);
+        text-align: center;
     }
     .vowel .english{
         position: absolute;
         top: 5px;
         left: 5px;
         font-size: calc(1vw + .7rem);
+        color: var(--theme-color1);
     }
     .letter-sound{
         position: absolute;
@@ -218,8 +221,7 @@ footer{
     }
     audio{
         display: block;
-        width: 80px;
-        height: 80px;
-        opacity: .3;
+        width: 78px;
+        opacity: .5;
     }
 
