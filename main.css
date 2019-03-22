@@ -153,15 +153,15 @@ body{
     font-size: calc(6vw + 1rem);
     border: 1px solid var(--theme-color2);
     /* color: var(--theme-color1); */
-    background: rgb(221, 217, 217);
+    /* background: rgb(221, 217, 217); */
 }
 .vowels .vowel:nth-child(odd){
-    /* background: var(--theme-color1); */
-    /* color:white; */
+    background: var(--theme-color1);
+    color:white;
 }
 .vowels .vowel:nth-child(even){
-    /* color: white; */
-    /* background: var(--theme-color2); */
+    color: white;
+    background: var(--theme-color2);
 }
 
 /* .vowels .vowel:hover{
@@ -189,19 +189,19 @@ footer{
    
     .vowel .nepali{
         font-size: calc(4vw + 1rem);
-        margin: 16px 0;
+        margin: 24px 0 12px 0;
         text-align: center;
-        text-shadow: 1px 1px 1px gray;
+        /* text-shadow: 1px 1px 1px gray; */
     }
     .vowel .english{
         position: absolute;
         top: 0px;
         left: 0px;
         font-size: calc(1vw + .7rem);
-        background: var(--theme-color2);
+        /* background: var(--theme-color2); */
         /* border: 1px solid var(--theme-color1); */
         padding: 2px 5px;
-        color: white;
+        color:lightblue;
         
     }
     .letter-sound{
@@ -213,8 +213,8 @@ footer{
     audio{
         display: block;
         width: 80px;
-        height: 20px;
-        opacity: .7;
+        height: 16px;
+        opacity:.6;
     }
     @media only screen and (min-width: 650px){
         .main-header{
