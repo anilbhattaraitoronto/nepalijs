@@ -169,9 +169,7 @@ body{
     background: white;
     color: var(--theme-color2);
 }
-.vowels .vowel:hover audio{
-    visibility: visible;
-}
+
 
 ul{
     padding: 20px;
@@ -208,7 +206,6 @@ footer{
         display: block;
         width: 78px;
         opacity: .5;
-        visibility: hidden;
     }
     @media only screen and (min-width: 650px){
         .main-header{
