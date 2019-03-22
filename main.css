@@ -198,14 +198,16 @@ footer{
     }
     .letter-sound{
         position: absolute;
-        bottom: 0;
-        right: 2px;
-        font-size: .8rem;
+        bottom: 1px;
+        right: 0;
+        font-size: .7rem;
     }
     audio{
         display: block;
-        width: 78px;
-        opacity: .5;
+        width: 80px;
+        height: 20px;
+        opacity: .7;
+        border: 1px solid white;
     }
     @media only screen and (min-width: 650px){
         .main-header{
