@@ -30,7 +30,7 @@ body{
 .main-nav button{
     border: none;
     outline: none;
-    padding: 5px 8px;
+    padding: 8px;
     background: none;
     font-size: 1rem;
     cursor: pointer;
@@ -106,7 +106,7 @@ body{
     display: none;
 }
 
-.lessons, .read, .write, .listen{
+.beginner, .intermediate, .advanced, .native{
     /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: auto;
@@ -118,15 +118,6 @@ body{
     }
  section{
     padding: 20px 2px;
-    }
-section:nth-child(even){
-    /* background: var(--theme-color2); */
-    height: auto;
-    /* color:var(--theme-color2); */
-    }
-section:nth-child(odd){
-    /* background: var(--theme-color1); */
-    /* color: var(--theme-color1); */
     }
 .section-title{
     color: white;
@@ -153,36 +144,35 @@ section:nth-child(odd){
     grid-template-rows: auto;
     grid-gap: 1px;
 }
-.vowels span{
-    display: block;
+.vowels .vowel{
+    position: relative;
     padding: 8px;
     width: 100%;
     height: 100%;
     transition: transform 500ms;
     font-size: calc(6vw + 1rem);
 }
-.vowels span:nth-child(odd){
+.vowels .vowel:nth-child(odd){
     background: var(--theme-color1);
     color:white;
 }
-.vowels span:nth-child(even){
+.vowels .vowel:nth-child(even){
     color: white;
     background: var(--theme-color2);
 }
-.vowels span .details{
-    visibility: hidden;
-}
 
-.vowels span:hover{
+.vowels .vowel:hover{
     cursor: pointer;
     transform: scale(1.2, 1.2);
+    z-index: 1;
     box-shadow: 8px 8px 18px black;
     background: white;
     color: var(--theme-color2);
-} 
-.vowels span:hover .details{
+}
+.vowels .vowel:hover audio{
     visibility: visible;
 }
+
 ul{
     padding: 20px;
     list-style-type:none;
@@ -195,15 +185,10 @@ footer{
     color: white;
     }
 
-    .vowel{
-        position: relative;
-        padding: 20px;
-        background: lightblue;
-    }
+   
     .vowel .nepali{
         font-size: calc(4vw + 1rem);
         margin: 16px 0;
-        color: var(--theme-color2);
         text-align: center;
     }
     .vowel .english{
@@ -211,7 +196,7 @@ footer{
         top: 5px;
         left: 5px;
         font-size: calc(1vw + .7rem);
-        color: var(--theme-color1);
+        color: lightblue;
     }
     .letter-sound{
         position: absolute;
@@ -223,5 +208,7 @@ footer{
         display: block;
         width: 78px;
         opacity: .5;
+        visibility: hidden;
     }
+   
 
