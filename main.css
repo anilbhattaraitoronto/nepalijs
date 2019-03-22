@@ -155,9 +155,11 @@ section:nth-child(odd){
 }
 .vowels span{
     display: block;
-    padding: 16px;
+    padding: 8px;
     width: 100%;
-    transition: transform 1s;
+    height: 100%;
+    transition: transform 500ms;
+    font-size: calc(6vw + 1rem);
 }
 .vowels span:nth-child(odd){
     background: var(--theme-color1);
