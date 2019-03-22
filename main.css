@@ -3,8 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    --theme-color1: rgb(133, 13, 4);
-    --theme-color2: rgb(11, 31, 100);
+    --theme-color1: #dc143c;
+    --theme-color2: #003893;
     font-family: Arial;
     font-size: 103%;
     }
@@ -139,10 +139,10 @@ body{
     max-width: 650px;
     margin: auto;
     text-align: center;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 1px;
+    /* display: grid; */
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* grid-template-rows: auto; */
+    /* grid-gap: 1px; */
 }
 .vowels .vowel{
     position: relative;
@@ -188,7 +188,7 @@ footer{
 
    
     .vowel .nepali{
-        font-size: calc(4vw + 1rem);
+        font-size: calc(18vw + 1rem);
         margin: 24px 0 12px 0;
         text-align: center;
         /* text-shadow: 1px 1px 1px gray; */
@@ -197,7 +197,7 @@ footer{
         position: absolute;
         top: 0px;
         left: 0px;
-        font-size: calc(1vw + .7rem);
+        font-size: calc(6vw + .7rem);
         /* background: var(--theme-color2); */
         /* border: 1px solid var(--theme-color1); */
         padding: 2px 5px;

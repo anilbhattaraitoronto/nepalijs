@@ -82,6 +82,36 @@ listenTab.addEventListener('click', () => {
 })
 
 
+//GAME PLAY CODES
+var vowelIndex = 1;
+var vowelList = document.querySelectorAll('.vowel');
+var nextVowelButton = document.querySelector('#next-vowel-button');
+var prevVowelButton = document.querySelector('#prev-vowel-button');
 
+currentVowel();
+
+function currentVowel() {
+    if (vowelIndex > vowelList.length) {
+        vowelIndex = 1
+    }
+    if (vowelIndex < 1) {
+        vowelIndex = vowelList.length
+    }
+    vowelList.forEach(vowel => {
+        vowel.style.display = 'none'
+        vowelList[vowelIndex - 1].style.display = 'block';
+    })
+}
+function playNextVowel() {
+    vowelIndex++;
+    currentVowel()
+}
+function playPrevVowel() {
+    vowelIndex--;
+    currentVowel();
+}
+
+nextVowelButton.addEventListener('click', playNextVowel);
+prevVowelButton.addEventListener('click', playPrevVowel);
 
 
