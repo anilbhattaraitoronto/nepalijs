@@ -139,12 +139,21 @@ body{
     max-width: 650px;
     margin: auto;
     text-align: center;
-    /* display: grid; */
-    /* grid-template-columns: repeat(4, 1fr); */
-    /* grid-template-rows: auto; */
-    /* grid-gap: 1px; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1px;
+    font-size: calc(4vw + 1rem);
 }
-.vowels .vowel{
+.vowels div:nth-child(odd){
+    background:var(--theme-color1);
+    color: white;
+}
+.vowels div:nth-child(even){
+    background: var(--theme-color2);
+    color: white;
+}
+ .vowel{
     position: relative;
     padding: 8px;
     width: 100%;
@@ -155,11 +164,11 @@ body{
     /* color: var(--theme-color1); */
     /* background: rgb(221, 217, 217); */
 }
-.vowels .vowel:nth-child(odd){
+.vowel:nth-child(odd){
     background: var(--theme-color1);
     color:white;
 }
-.vowels .vowel:nth-child(even){
+.vowel:nth-child(even){
     color: white;
     background: var(--theme-color2);
 }
