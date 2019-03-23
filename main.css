@@ -167,9 +167,10 @@ body{
     position: absolute;
     border: none;
     padding: 4px 16px;
-    background: var(--theme-color1);
+    /* background: var(--theme-color1); */
     color: rgb(255, 255, 255);
     font-size: 1rem;
+    cursor: pointer;
     /* box-shadow: 1px 1px 1px rgb(76, 75, 75); */
 }
 #prev-vowel-button{
