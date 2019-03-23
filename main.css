@@ -166,7 +166,7 @@ body{
     background: none;
     position: absolute;
     border: none;
-    padding: 4px 16px;
+    padding: 4px;
     /* background: var(--theme-color1); */
     color: rgb(255, 255, 255);
     font-size: 1rem;
