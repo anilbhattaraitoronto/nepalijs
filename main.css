@@ -136,6 +136,8 @@ body{
 }
 .vowel-list{
     position: relative;
+    max-width: 650px;
+    margin: auto;
 }
 .vowels{
     width: 100%;
@@ -188,6 +190,8 @@ body{
     position: relative;
     padding: 8px;
     width: 100%;
+    max-width: 650px;
+    margin: auto;
     height: 100%;
     transition: transform 500ms;
     font-size: calc(6vw + 1rem);
