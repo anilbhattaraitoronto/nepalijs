@@ -103,7 +103,7 @@ function showVowels(n) {
 
     var i;
     var vowelList = document.querySelectorAll('.vowel');
-    // var thumbnails = document.querySelectorAll('.vowel-thumbnail');
+    var thumbnails = document.querySelectorAll('.vowel-thumbnail');
 
     if (n > vowelList.length) {
         vowelIndex = 1
@@ -114,5 +114,11 @@ function showVowels(n) {
     vowelList.forEach(vowel => {
         vowel.style.display = 'none'
     })
+    thumbnails.forEach(thumbnail => {
+        thumbnail.className = thumbnail.className.replace(' active', ' ')
+    })
+    thumbnails[vowelIndex - 1].className += " active";
     vowelList[vowelIndex - 1].style.display = 'block';
+
+
 }

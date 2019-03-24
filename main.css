@@ -73,9 +73,9 @@ body{
     background: var(--theme-color1);
     margin: auto;
     border: none;
-    padding: 8px 4px;
+    padding: 4px;
     position: absolute;
-    top: 0;
+    top: 0px;
     cursor:pointer;
     border-top-left-radius:3px;
     border-top-right-radius:3px;
@@ -160,6 +160,10 @@ body{
 .vowels div:nth-child(even){
     background: var(--theme-color2);
     color: white;
+}
+.vowels >div.active{
+    background: white;
+    color: var(--theme-color2);
 }
 
 .vowel-buttons{
