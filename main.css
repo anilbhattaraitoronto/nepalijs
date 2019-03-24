@@ -150,6 +150,9 @@ body{
     grid-gap: 1px;
     font-size: calc(4vw + 1rem);
 }
+.vowels div {
+    cursor: pointer;
+}
 .vowels div:nth-child(odd){
     background:var(--theme-color1);
     color: white;

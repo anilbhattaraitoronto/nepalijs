@@ -84,34 +84,35 @@ listenTab.addEventListener('click', () => {
 
 //GAME PLAY CODES
 var vowelIndex = 1;
-var vowelList = document.querySelectorAll('.vowel');
-var nextVowelButton = document.querySelector('#next-vowel-button');
-var prevVowelButton = document.querySelector('#prev-vowel-button');
 
-currentVowel();
+// var nextVowelButton = document.querySelector('#next-vowel-button');
+// var prevVowelButton = document.querySelector('#prev-vowel-button');
 
-function currentVowel() {
-    if (vowelIndex > vowelList.length) {
+
+showVowels(vowelIndex);
+
+function nextVowels(n) {
+    showVowels(vowelIndex += n)
+}
+
+function currentVowel(n) {
+    showVowels(vowelIndex = n)
+};
+
+function showVowels(n) {
+
+    var i;
+    var vowelList = document.querySelectorAll('.vowel');
+    // var thumbnails = document.querySelectorAll('.vowel-thumbnail');
+
+    if (n > vowelList.length) {
         vowelIndex = 1
     }
-    if (vowelIndex < 1) {
+    if (n < 1) {
         vowelIndex = vowelList.length
     }
     vowelList.forEach(vowel => {
         vowel.style.display = 'none'
-        vowelList[vowelIndex - 1].style.display = 'block';
     })
+    vowelList[vowelIndex - 1].style.display = 'block';
 }
-function playNextVowel() {
-    vowelIndex++;
-    currentVowel()
-}
-function playPrevVowel() {
-    vowelIndex--;
-    currentVowel();
-}
-
-nextVowelButton.addEventListener('click', playNextVowel);
-prevVowelButton.addEventListener('click', playPrevVowel);
-
-
