@@ -6,7 +6,7 @@
     --theme-color1: #a00725;
     --theme-color2: #003893;
     font-family: Arial;
-    font-size: 103%;
+    /* font-size: 103%; */
     }
 body{
     width: 95%;
@@ -17,6 +17,14 @@ body{
         font-size: 95%;
         line-height: 1.3;
     }
+.game-intro img{
+    height: 80px;
+    width: 80px;
+    margin: 1em .5em 1em 0;
+    border-radius: 50%;
+    shape-outside: circle();
+    float: left;
+}
 .main-nav{
     display: flex;
     justify-content: center;
@@ -91,6 +99,7 @@ body{
 .next-button:hover, .prev-button:hover{
     color: var(--theme-color2);
     background: white;
+    border: 1px solid var(--theme-color1);
 }
 .refresh-button { 
     color: white;
@@ -104,6 +113,7 @@ body{
 
 .lesson{
     display: none;
+    padding: 2px 0;
 }
 
 .beginner, .intermediate, .advanced, .native{
@@ -116,15 +126,13 @@ body{
     position: relative;
     display: none;
     }
- section{
-    padding:2px;
-    }
+
 .section-title{
     color: white;
     background: var(--theme-color2);
     text-align: center;
     padding: 10px 0;
-    margin: 16px auto;
+    margin: 26px auto;
     }
 .section-title > .topic{
     background: var(--theme-color2);
@@ -140,6 +148,7 @@ body{
     margin: auto;
 }
 .vowels{
+    position: relative;
     width: 100%;
     max-width: 650px;
     margin: auto;
@@ -200,12 +209,20 @@ body{
     max-width: 650px;
     margin: auto;
     height: 100%;
-    transition: transform 500ms;
+    animation-name: play;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
     font-size: calc(6vw + 1rem);
     border: 1px solid var(--theme-color2);
+    
     /* color: var(--theme-color1); */
     /* background: rgb(221, 217, 217); */
 }
+@keyframes play{
+    0%{transform: scale(.5, .5); opacity: .5}
+    100%{ transform: scale(1, 1); opacity: 1}
+}
+
 .vowel:nth-child(odd){
     background: var(--theme-color1);
     color:white;
@@ -242,8 +259,19 @@ footer{
         font-size: calc(18vw + 1rem);
         margin: 24px 0 12px 0;
         text-align: center;
+        /* animation-name: move;
+        animation-direction: top;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out; */
         /* text-shadow: 1px 1px 1px gray; */
     }
+    /* @keyframes move{
+        0% {transform: rotate(0deg); opacity: 1;}
+        25% { transform: rotate(90deg); opacity: .75;}
+        50%{transform: rotate(180deg); opacity: .5;}
+        75%{transform: rotate(270deg); opacity: .25}
+        100% { transform: rotate(360deg); opacity: 0}
+    } */
     .vowel .english{
         position: absolute;
         top: 0px;
