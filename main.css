@@ -219,7 +219,7 @@ body{
     /* background: rgb(221, 217, 217); */
 }
 @keyframes play{
-    0%{transform: scale(.5, .5); opacity: .7}
+    0%{transform: scale(.85); opacity: .7}
     100%{ transform: scale(1, 1); opacity: 1}
 }
 
