@@ -209,9 +209,9 @@ body{
     max-width: 650px;
     margin: auto;
     height: 100%;
-    animation-name: play;
+    /* animation-name: play;
     animation-duration: 1000ms;
-    animation-timing-function: linear;
+    animation-timing-function: linear; */
     font-size: calc(6vw + 1rem);
     border: 1px solid var(--theme-color2);
     
@@ -219,8 +219,8 @@ body{
     /* background: rgb(221, 217, 217); */
 }
 @keyframes play{
-    0%{right: -1000px}
-    100%{ right: 0;}
+    0%{opacity: .5; transform: scale(.5);}
+    100%{opacity: 1; transform:scale(1);}
 }
 
 .vowel:nth-child(odd){
@@ -259,6 +259,9 @@ footer{
         font-size: calc(18vw + 1rem);
         margin: 24px 0 12px 0;
         text-align: center;
+        animation-name: play;
+        animation-duration: 1000ms;
+        animation-timing-function: ease-in-out;
         /* animation-name: move;
         animation-direction: top;
         animation-duration: 4s;
