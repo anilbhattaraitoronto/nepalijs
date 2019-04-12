@@ -287,7 +287,7 @@ footer{
         color:lightblue;
         
     }
-    .vowel .letter-sound{
+    .vowel .letter-sound, .root-syllable .letter-sound, .extended-root-syllable .letter-sound{
         position: absolute;
         bottom: 0;
         right: 0;
