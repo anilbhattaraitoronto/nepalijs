@@ -119,6 +119,4 @@ function showVowels(n) {
     })
     thumbnails[vowelIndex - 1].className += " active";
     vowelList[vowelIndex - 1].style.display = 'block';
-
-
 }
