@@ -1,5 +1,4 @@
 
-
 var index = 1;
 var nextButton = document.querySelector('.next-button');
 var prevButton = document.querySelector('.prev-button')

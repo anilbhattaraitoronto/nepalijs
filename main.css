@@ -142,7 +142,7 @@ body{
     text-align: center;
     padding: 10px 0;
 }
-.vowel-list{
+.vowel-list, .root-syllable-list{
     position: relative;
     max-width: 650px;
     margin: 2px auto;
@@ -180,7 +180,7 @@ body{
     margin: 10px auto;
     text-align: center;
 }
-#prev-vowel-button, #next-vowel-button{
+#prev-vowel-button, #next-vowel-button, #prev-root-button, #next-root-button{
     background: none;
     position: absolute;
     border: none;
@@ -191,18 +191,18 @@ body{
     cursor: pointer;
     /* box-shadow: 1px 1px 1px rgb(76, 75, 75); */
 }
-#prev-vowel-button{
+#prev-vowel-button, #prev-root-button{
     top: 42%;
     left: 0;
 }
-#next-vowel-button{
+#next-vowel-button, #next-root-button{
     top: 42%;
     right: 0;
 }
 #prev-vowel-button:hover, #next-vowel-button:hover{
     background: var(--theme-color2);
 }
- .vowel{
+ .vowel, .root-syllable{
     position: relative;
     padding: 8px;
     width: 100%;
@@ -255,7 +255,7 @@ footer{
     }
 
    
-    .vowel .nepali{
+    .vowel .nepali, .root-syllable .nepali{
         font-size: calc(18vw + 1rem);
         margin: 24px 0 12px 0;
         text-align: center;
@@ -272,7 +272,7 @@ footer{
         75%{transform: rotate(270deg); opacity: .25}
         100% { transform: rotate(360deg); opacity: 0}
     } */
-    .vowel .english{
+    .vowel .english, .root-syllable .english{
         position: absolute;
         top: 0px;
         left: 0px;
@@ -283,7 +283,7 @@ footer{
         color:lightblue;
         
     }
-    .letter-sound{
+    .vowel .letter-sound{
         position: absolute;
         bottom: 0;
         right: 0;
@@ -299,4 +299,22 @@ footer{
         }
     }
    
+/* Lesson 2*/
 
+.root-syllable-list{
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+.root-syllable:nth-child(odd){
+    background: var(--theme-color1);
+}
+.root-syllable:nth-child(even){
+    background: var(--theme-color2);
+}
+.root-syllable .nepali{
+    color: white;
+}
+#prev-root-button{
+    position:absolute;
+}
