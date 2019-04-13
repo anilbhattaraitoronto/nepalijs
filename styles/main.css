@@ -161,6 +161,7 @@ body{
 }
 .vowels div {
     cursor: pointer;
+    border:1px solid var(--theme-color2);
 }
 .vowels div:nth-child(odd){
     background:var(--theme-color1);
